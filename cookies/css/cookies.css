@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+}	
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h4 {
+	color: #AF6482;
+}
+
+h5 {
+	color: green;
+}
+
+.flexwrapper {
+	display: flex;
+	flex-direction: flex;
+}
+.subwrapper1, .subwrapper2 {
+	padding: 40px; 
+	line-height: 150%;
+
+}
+/*LEFTNAV*/
+
+.subwrapper1 {
+	width: 500px;
+	background-color: #F0F0D9;
+	/*padding: 10px;*/
+
+}
+.subwrapper1 img {
+	width: 450px;
+}
+
+.ingredients {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	list-style-position: inside;
+}
+
+.directions {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	list-style-position: inside;
+}
+
+.time {
+	display: flex;
+	justify-content: space-between;
+	width: 420px;
+}
+
+.time ul li {
+	list-style-type: none;
+	text-align: center;
+}
+
+.time ul h4 {
+	text-transform: uppercase;
+
+}
+
+.related-recipes {
+	list-style-position: inside;
+}
+
+.expert-tips {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+/*RIGHTNAV*/
+
+.subwrapper2 {
+	width: 300px;
+	background-color: #EFD794;
+}
+
