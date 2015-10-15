@@ -13,6 +13,7 @@ h1, h2, h4 {
 
 h5 {
 	color: green;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .flexwrapper {
@@ -46,6 +47,19 @@ h5 {
 	margin-top: 40px;
 	margin-bottom: 40px;
 	list-style-position: inside;
+}
+
+.parent {
+	position: relative;
+}
+
+img.info {
+	position: absolute;
+	left: 405px;
+    right: 0;
+    bottom: 15px;
+    width: 40px;
+
 }
 
 .time {
