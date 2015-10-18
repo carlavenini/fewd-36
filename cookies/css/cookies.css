@@ -10,6 +10,9 @@ body {
 h1, h2, h4 {
 	color: #AF6482;
 }
+h4 span{
+	font-size: 97%;
+}
 
 h5 {
 	color: green;
@@ -78,6 +81,15 @@ img.info {
 
 }
 
+ul {
+	margin-left: 15px;
+}
+
+
+
+ul {
+	margin-left: 15px;
+}
 .related-recipes {
 	list-style-position: inside;
 }

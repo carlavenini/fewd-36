@@ -1,0 +1,16 @@
+function makesSalad (lettuce, tomatoes, cheese, nut, ){
+	washing lettuce
+	add dressing
+	add tomatoes to lettuce
+	grate the cheese
+	sprinkle the nuts
+	toss together and give me the salad
+
+}
+
+makeSalad (romaine, cesar, roma, parmesan, almond)
+
+
+makeSalad ()
+function anotherOne (){
+	function body
