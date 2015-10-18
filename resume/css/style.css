@@ -1,5 +1,11 @@
 /*resume styling*/
 body {
-	background-color: blue;
+	background-color: gray;
 
+}
+
+#banner-image img{
+	width: 500px;
+	background-color: #F0F0D9;
+	/*padding: 10px;*/
 }
