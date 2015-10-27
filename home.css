@@ -1,5 +1,5 @@
 p {
-	font-family: "Futura";
+	font-family: "Montseratt";
 }
 
 header {
@@ -13,12 +13,19 @@ header h1 {
 	margin: 20px auto 20px auto;
 }
 
-.row1 {
-	display: flex;
-	margin: 10px auto 10px auto;
-	border: 1px solid red;
-	align-content: center;
+
+.row1 li {
+	display: inline-block;
+	margin: 10%;
+
 }
+
+.row1 {
+
+
+}
+
+
 
 a {
 	width: 50px;
