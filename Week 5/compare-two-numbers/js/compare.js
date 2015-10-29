@@ -13,9 +13,6 @@ buttonF.addEventListener("click", calculateF);
 
 
 
-
-
-
 // Functions
 function calculateC() {
    var calcC = tempC.value * (9/5) + 32;
@@ -24,7 +21,7 @@ console.log(calcC);
 }
 
 function calculateF() {
-   var calcF = tempF.value (fahrenheit - 32) * 5/9;
+   var calcF = (tempF.value - 32) * 5/9;
 console.log(calcF);
    tempC.value = calcF; 
 
