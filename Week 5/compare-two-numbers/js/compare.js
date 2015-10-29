@@ -1,20 +1,44 @@
-	var firstNumber = document.querySelector(".firstNumber");
-	var secondNumber = document.querySelector(".secondNumebr");
+	// Variables
 
-
-
-function changeValue() {
-   var firstNumber = event.target;
-   var secondNumber = swatch.className;
+   var tempF = document.querySelector(".temp-f");
+	var tempC = document.querySelector(".temp-c");
    
-   var body = document.querySelector("body");
-   body.className = color;
+   var buttonF = document.querySelector(".toF");
+   var buttonC = document.querySelector(".toC");
 
-   var name = document.querySelector("span");
-   name.textContent = color;
+// Event Listeners
+buttonC.addEventListener("click", calculateC);
+buttonF.addEventListener("click", calculateF);
 
 
-   <button class="compare">Compare</button>
+
+
+
+
+
+// Functions
+function calculateC() {
+   var calcC = tempC.value * (9/5) + 32;
+console.log(calcC);
+   tempF.value = calcC; 
+}
+
+function calculateF() {
+   var calcF = tempF.value (fahrenheit - 32) * 5/9;
+console.log(calcF);
+   tempC.value = calcF; 
+
+
+
+}
+
+
+
+
+
+
+
+
 
    // conditionals 
    // log greater
@@ -25,11 +49,11 @@ function changeValue() {
    // 	else
    // 		console log =
 
-   var sign.textContent = 
+   // var sign.textContent = 
 
-   sign.textContent <
+   // sign.textContent <
 
-   sign.textContent >
-   update sign.textContent = x;
+   // sign.textContent >
+   // update sign.textContent = x;
 
-   sign.textContent
+   // sign.textContent
