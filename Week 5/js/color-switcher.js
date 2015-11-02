@@ -1,5 +1,5 @@
   
-    var color1 = document.querySelector(".olive");
+  var color1 = document.querySelector(".olive");
 	var color2 = document.querySelector(".skyblue");
 	var color3 = document.querySelector(".salmon");
 	var color4 = document.querySelector(".burlywood");
