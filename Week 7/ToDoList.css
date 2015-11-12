@@ -35,12 +35,10 @@ header {
 
 input {
    line-height: 40px;
-   font-size: 18pt;
+   font-size: 15pt;
 }
 
-#btn-div {  
-   display: inline-block;
-}
+
 
 button {
    width: 100px;
