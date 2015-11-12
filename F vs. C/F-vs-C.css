@@ -1,0 +1,64 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+    display: flex;
+background: url(sunny-day.png) no-repeat center center fixed;
+background-size: cover;
+  font-family: Helvetica;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 100px;
+}
+h1 {
+  font-size: 20px;
+}
+input {
+  font-size: inherit;
+  line-height: inherit;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.secOne,
+.secTwo {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.secTwo{
+
+  padding-top: 50px;
+}
+
+.tempOne{
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.temp-f,
+.temp-c {
+  width: 80px;
+
+   margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.c_to_f,
+.f_to_c{
+  margin-top: 2px;
+  font-size: 15px;
+/*}
+.temp {
+  padding-left: 150px;
+}*/
+
+
+.group{
+  justify-content: center;
+}

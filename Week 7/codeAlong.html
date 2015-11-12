@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>create element</title>
+</head>
+<body>
+<button>Color me</button>
+
+		<ul>
+			<li>blue</li>
+			<li>green</li>
+			<li>red</li>
+		</ul>	
+
+	<label>	
+<script>
+	// Structure
+	var list= document.querySelector("ul");
+	var button = document.querySelector("button");
+	var userName = document.querySelector("username");
+	var comment = document.querySelector("comment");
+
+	console.log()
+
+
+
+// Events
+button.addEventListener("click", colorMe);
+
+// Event Handler function
+
+	function colorMe(){
+		
+		var usernameValue = username.value;
+		var color = prompt("what color would you like")
+		
+		var newItem = document.createElement("LI");
+		newItem.textContent = "yellow";
+		list.appendChild(newItem);
+	}
+	
+	
+	var newItem = document.createElement("LI");
+	newItem.textContent = "yellow";
+
+	list.appendChild(newItem);
+
+	 var list = document.querySelector("ul");
+ 	 
+
+</script>
+
+
+
+
+
+</body>
+</html>

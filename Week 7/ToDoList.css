@@ -1,0 +1,50 @@
+
+#container {
+   display: -webkit-flex;
+   display
+}
+
+
+
+ul {
+   list-style: none;
+}
+
+label, button{
+   margin: 0 auto;
+   cursor: pointer;
+}
+
+header {
+   margin: 0 auto;
+   text-align: center;
+   font-family: Lato;
+   padding-right: 40px;
+}
+
+
+.task-list {
+   border: 2px solid black;
+   padding: 50px;
+   background-image: url(wood2.jpg);
+   border-radius: 30px;
+   margin: 0 auto;
+   background-size: cover;
+   background-position: center;
+}
+
+input {
+   line-height: 40px;
+   font-size: 18pt;
+}
+
+#btn-div {  
+   display: inline-block;
+}
+
+button {
+   width: 100px;
+   height: 40px;
+   display: block;
+   
+}
