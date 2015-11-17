@@ -4,6 +4,20 @@
    display
 }
 
+.myCheckbox input {
+    display: none;
+}
+
+.myCheckbox span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("link_to_image");
+}
+
+.myCheckbox input: checked + span {
+    background: url("link_to_another_image");
+}
 
 
 ul {
@@ -38,7 +52,14 @@ input {
    font-size: 15pt;
 }
 
+.myCheckbox input {
+   display: none;
 
+}
+
+.myCheckbox span {
+
+}
 
 button {
    width: 100px;

@@ -3,6 +3,8 @@ var list        = document.querySelector("ul");
 var button      = document.querySelector("button");
 var username    = document.querySelector(".username");
 var comment     = document.querySelector(".comment");
+var checkbox = document.createElement("input");
+var span = document.createElement("span");
 
 console.log(username);
 console.log(comment);
@@ -37,5 +39,37 @@ function addComment(e){
    
    
    //step three; insert the element
-   list.appendChild(newItem);   
+   list.appendChild(newItem);  
+   li.appendChild(label);
+   label.appendChild(checkbox);
+   label.appendChild(span);
+   tasks.appendChild(li); 
+}
+
+function testIt(event) {
+      console.log("testIt");
+      console.log(event.target);
+      event.target.className = "checked";
+}
+
+var tasks = [];
+var task1 = {
+   name: "exercise",
+   date: undefined,
+   completed: false
+
+}
+
+var task2 = {
+   name: "mow lawn",
+   date: undefined,
+   completed: false
+
+}
+
+var task3 = {
+   name: "laundry",
+   date: undefined,
+   completed: false
+
 }

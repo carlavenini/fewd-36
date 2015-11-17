@@ -5,16 +5,13 @@
 	var color4 = document.querySelector(".burlywood");
 	var color5 = document.querySelector(".thistle");
 
+  var list = document.querySelector("ul");
 
 // Events
 // -----------------------
-color1.addEventListener("click", changeColor);
-color2.addEventListener("click", changeColor);
-color3.addEventListener("click", changeColor);
-color4.addEventListener("click", changeColor);
-color5.addEventListener("click", changeColor);
 
 
+list.addEventListener("click", changeColor);
 
 // Eventhandler functions
 // -----------------------
@@ -23,10 +20,20 @@ color5.addEventListener("click", changeColor);
 //    body.setAttribute("class", color);
 // }
 
+function makeLunch(event) {
+}
 
 function changeColor(event) {
+  console.log("changeColor");
+  console.log(event.target.tagName);
+
+  if (event.target.tagName = "UL") {
+    return;
+  }
+
    var swatch = event.target;
    var color = swatch.className;
+   var color = swatch.getAttribute("class");
    
    var body = document.querySelector("body");
    body.className = color;
@@ -36,6 +43,11 @@ function changeColor(event) {
    // console.log(name);  this is how you test the line in the CONSOLE
 }
 
+
+
+var theme = {
+  color: "thistle"
+}
 // function test (event) {
 // 	var swatch = event.target;
 // 	console.log(event);
