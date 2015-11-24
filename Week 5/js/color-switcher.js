@@ -7,10 +7,15 @@
 
   var list = document.querySelector("ul");
 
+
+// Set Up
+var theme = {
+  'color': 'white'
+};
 // Events
 // -----------------------
 
-
+window.addEventListener("load", pageLoad);
 list.addEventListener("click", changeColor);
 
 // Eventhandler functions
@@ -19,23 +24,45 @@ list.addEventListener("click", changeColor);
 //    var body = document.querySelector("body");
 //    body.setAttribute("class", color);
 // }
-
-function makeLunch(event) {
-}
-
-function changeColor(event) {
-  console.log("changeColor");
-  console.log(event.target.tagName);
+function handleClick(event){
+// console.log("changeColor");
+//   console.log(event.target.tagName);
 
   if (event.target.tagName = "UL") {
     return;
   }
+   var swatchElement = event.target;
+   var swatchcolor = swatch.getAttribute("class");
 
-   var swatch = event.target;
-   var color = swatch.className;
-   var color = swatch.getAttribute("class");
-   
-   var body = document.querySelector("body");
+// 1. update data model
+   theme.color = swatchColor;
+
+// 2.C Call function to update page
+   changeColor(theme);
+
+// 3.save the date model to a local storage
+   localStorage.setItem('theme', JSON.stringify(theme))
+ }
+
+function pageLoad(event) {
+  // get the theme object out of localStorage
+      if (JSON.parse(localStorage.getItem('theme') == null){
+        changeColor(theme);
+      } else {
+        theme = JSON.parse(localStorage.getItem('theme')) == null){
+        changeColor(theme);
+      }
+ }     
+  var theme = JSON.parse(localStorage.getItem('theme'))
+// console.log(theme);
+
+changeColor(theme);
+}
+
+
+// Update page functions
+function changeColor(event) {
+  var body = document.querySelector("body");
    body.className = color;
 
    var name = document.querySelector("span");
@@ -45,9 +72,6 @@ function changeColor(event) {
 
 
 
-var theme = {
-  color: "thistle"
-}
 // function test (event) {
 // 	var swatch = event.target;
 // 	console.log(event);

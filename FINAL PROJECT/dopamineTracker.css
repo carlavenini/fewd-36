@@ -1,0 +1,15 @@
+header, h1, h2, p,  {
+	font-family: "Raleway";
+	text-align: center;
+}
+
+header {
+	text-align: center;
+	color: blue;
+}
+
+.flexwrapper {
+	display: flex;
+	flex-direction: flex;
+}
+

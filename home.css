@@ -1,5 +1,7 @@
-p {
-	font-family: "Helvetica";
+h1, a, p {
+	font-family: "Raleway";
+	color: black;
+	text-decoration: none;
 }
 
 header {
@@ -17,17 +19,14 @@ header h1 {
 .row1 li {
 	display: inline-block;
 	margin: 10%;
+	text-decoration: none;
 
 }
 
 
 
-
-}
-
-
-
-a {
+.a {
 	width: 50px;
 	color: black;
+	text-decoration: none;
 }
