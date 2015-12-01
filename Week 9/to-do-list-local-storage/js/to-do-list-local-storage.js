@@ -36,8 +36,9 @@ console.log("Sanity check!!");
 
 	function storage(event) {
 		event.preventDefault();
+
 // Create Task Object
-		var task {
+		var task = {
 			"name": input.value,
 			"date": date.value,
 			"done": false
@@ -82,6 +83,10 @@ console.log("Sanity check!!");
 		labelTask.textContent = task.name;
 		labelDate.textContent = "(" + task.date + ")";
 		labelDate.classList.add("gray");
+		checkbox.addEventListener("click",taskClicked);
+
+
+
 
 		//addLi.className = "taskListItem";
 		itemsList.appendChild(addLi);
@@ -92,6 +97,28 @@ console.log("Sanity check!!");
 
 	}
 
+	function taskClicked(e) {
+		console.log("taskClicked");
+		var checkbox = e.target;
+		var text = checkbox.nextSibling.textContent;
+
+		console.log(checkbox.checked);
+		console.log(text);
+
+		toDo.items.forEach()
+
+	
+
+
+
+	function updateCheckedState(task) {
+		if (task.name == text) {
+			task.done = checkbox.checked;
+			// save to localStorage
+			localStorage.setItem("toDo", JSON.stringify(toDo));
+		}
+	}
+}
 	//
 // });
 //to 

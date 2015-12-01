@@ -1,5 +1,5 @@
-header, h1, h2, p,  {
-	font-family: "Raleway";
+head, h1, h2, p,  {
+	font-family: 'Raleway';
 	text-align: center;
 }
 
@@ -9,7 +9,15 @@ header {
 }
 
 .flexwrapper {
-	display: flex;
+	display: center;
 	flex-direction: flex;
 }
 
+html {
+	position: relative;
+	min-height: 100%;
+	font-family: 'Raleway';
+	background-image: img.NeaonBrain.jpg;
+	background-size: cover;
+	background-position: center;
+}

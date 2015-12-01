@@ -1,0 +1,196 @@
+/* Page Styles
+================================ */
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font: normal 1.1em/1.5;
+	font-family: 'raleway', sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+
+
+/* Layout Element Colors
+================================ */
+.checkedboxes      { -webkit-columns: 3; }
+.btn-group a       { background-color: #3f8abf; }
+.main-header       { background-color: #ffffff; }
+.main-nav a        { background-color: #3f8abf; }
+.main-logo a       { background-color: #5fcf80; }
+.primary-content   { background-color: #caebf6; }
+.main-footer       { background-color: #b7c0c7; }
+.main-banner       { background-color: #ffffff; }
+
+/* Main Layout
+================================ */
+
+.main-header,
+.col {
+	padding: 20px;
+}
+
+.btn-group a,
+.main-logo a, 
+.main-nav a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 8px 15px;
+	border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-group a {
+	margin-top: 5px;
+}
+
+
+.main-nav a:hover::before {
+    left: 10%;
+}
+
+.box {
+	margin-right: 5px;
+	display: block;
+
+}
+.main-footer {
+	text-align: center;
+	padding-top: 1px;
+	padding-bottom: 3px;
+	font-size: 12px;
+
+}
+
+.primary-content h2 {
+	font-family: 'raleway';
+	display: block;
+	text-align: center;
+}
+
+.secondary-content h3 {
+	text-align: center;
+	font-family: 'raleway';
+}
+
+.extra-content h3 {
+	text-align: center;
+	font-family: 'raleway';
+}
+
+.main-banner {
+		text-align: center;
+		padding: 50px 15px;
+		display: block;
+}
+
+.checkboxes {
+		font-family: 'raleway';
+		font-size: 16px;
+}
+
+/* Imagery
+================================ */
+
+.feat-img {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.secondary-img {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+	}
+
+/* Media Queries
+================================ */
+
+@media (min-width: 1px) and (max-width: 768px) {
+	.main-nav li {
+		margin-top: 15px;
+	}
+	.main-nav li:first-child {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 769px) {
+
+	body {
+		padding-top: 120px;
+	}
+
+	/* Header and Banner Layout
+	================================ */
+
+	.main-header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 120px;
+	}
+    .main-nav {
+        display: -webkit-flex;
+        display: flex;
+        height: 100%;
+    }
+    .main-nav li {
+        -webkit-align-self: center;
+        align-self: center;
+        -webkit-flex-grow: 1;
+        margin-left: 8px;
+        margin-right: 8px;
+        transition: .5s;
+    }
+    .main-nav li:hover:not(.main-logo){
+        flex-grow: 2;
+    }
+    .main-logo:first-child {
+        margin-right: 50px;
+        -webkit-flex-grow: 1.5;
+        flex-grow: 1.5;
+    }
+
+
+	/* Column Layout
+	================================ */
+    
+    .content-row {
+        display: -webkit-flex;
+        display: flex;
+    }
+    .col {
+        -webkit-flex: 1;
+        flex: 1;
+    }
+    .primary-content {
+        -webkit-flex: 2;
+        flex: 2;
+        -webkit-order: -1;
+        order: -1;
+    }
+    .extra-content {
+        order: 3
+       ;
+    }
+
+
+	/* Imagery
+	================================ */
+
+	.feat-img {
+		width: 50%;
+		float: left;
+		margin-right: 25px;
+	}
+
+
+}
