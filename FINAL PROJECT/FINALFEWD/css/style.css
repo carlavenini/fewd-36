@@ -18,8 +18,8 @@ body {
 .checkedboxes      { -webkit-columns: 3; }
 .btn-group a       { background-color: #3f8abf; }
 .main-header       { background-color: #ffffff; }
-.main-nav a        { background-color: #3f8abf; }
-.main-logo a       { background-color: #5fcf80; }
+.main-nav a        { background-color: #2FFADF; }
+.main-logo a       { background-color: #B0FA2F; }
 .primary-content   { background-color: #caebf6; }
 .main-footer       { background-color: #b7c0c7; }
 .main-banner       { background-color: #ffffff; }
@@ -39,14 +39,14 @@ body {
 	color: white;
 	text-decoration: none;
 	text-align: center;
-	padding: 8px 15px;
-	border-radius: 5px;
+	padding: 10px;
+	border-radius: 7px;
     position: relative;
     overflow: hidden;
 }
 
 .btn-group a {
-	margin-top: 5px;
+	margin-top: 2px;
 }
 
 
@@ -59,6 +59,12 @@ body {
 	display: block;
 
 }
+
+.levelSpike  {
+	font-family: 'raleway', bold;
+	font-size: 50px;
+} 
+
 .main-footer {
 	text-align: center;
 	padding-top: 1px;
@@ -92,7 +98,14 @@ body {
 .checkboxes {
 		font-family: 'raleway';
 		font-size: 16px;
+		padding-right: 5px;
+		padding-left: 5px;
 }
+
+
+
+
+
 
 /* Imagery
 ================================ */
@@ -137,11 +150,13 @@ body {
 		width: 100%;
 		height: 120px;
 	}
+
     .main-nav {
         display: -webkit-flex;
         display: flex;
         height: 100%;
     }
+
     .main-nav li {
         -webkit-align-self: center;
         align-self: center;
@@ -150,9 +165,11 @@ body {
         margin-right: 8px;
         transition: .5s;
     }
+
     .main-nav li:hover:not(.main-logo){
         flex-grow: 2;
     }
+
     .main-logo:first-child {
         margin-right: 50px;
         -webkit-flex-grow: 1.5;
@@ -167,16 +184,19 @@ body {
         display: -webkit-flex;
         display: flex;
     }
+
     .col {
         -webkit-flex: 1;
         flex: 1;
     }
+
     .primary-content {
         -webkit-flex: 2;
         flex: 2;
         -webkit-order: -1;
         order: -1;
     }
+
     .extra-content {
         order: 3
        ;
@@ -193,4 +213,3 @@ body {
 	}
 
 
-}
