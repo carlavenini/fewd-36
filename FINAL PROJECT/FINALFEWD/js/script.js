@@ -77,10 +77,22 @@ function changeOrgasm(e){
  	}
 
 
- 		// information.textContent  = chocolate_text;
- 		// information.textContent  = run_text;
- 		// information.textContent  = alcohol_text;
- 		// information.textContent  = sex_text;
+
+//Collapsible Element (MORE)
+
+// <script>
+// function show()
+// {
+// //Function content goes here
+// }
+// </script>
+
+// if(document.getElementById('expand').style.display == 'none')
+
+// 	document.getElementById('expand').style.display = 'block';
+
+// else
+// document.getElementById('expand').style.display = 'none';
 
 
 

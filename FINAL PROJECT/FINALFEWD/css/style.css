@@ -18,9 +18,9 @@ body {
 .checkedboxes      { -webkit-columns: 3; }
 .btn-group a       { background-color: #3f8abf; }
 .main-header       { background-color: #ffffff; }
-.main-nav a        { background-color: #2FFADF; }
+.main-nav a        { background-color: #2FFADF; /*opacity; 20%;*/ }
 .main-logo a       { background-color: #B0FA2F; }
-.primary-content   { background-color: #caebf6; }
+.primary-content   { background-color: #DCEEE0; }
 .main-footer       { background-color: #b7c0c7; }
 .main-banner       { background-color: #ffffff; }
 
@@ -40,7 +40,7 @@ body {
 	text-decoration: none;
 	text-align: center;
 	padding: 10px;
-	border-radius: 7px;
+	border-radius: ;
     position: relative;
     overflow: hidden;
 }
@@ -60,21 +60,24 @@ body {
 
 }
 
-.levelSpike  {
-	font-family: 'raleway', bold;
+.levelSpike p {
+	font-family: 'raleway';
 	font-size: 50px;
+	font-style: bold;
 } 
 
 .main-footer {
-	text-align: center;
+	text-align: left;
 	padding-top: 1px;
+	padding-left: 20px;
 	padding-bottom: 3px;
 	font-size: 12px;
+	color: #616363;
 
 }
 
 .primary-content h2 {
-	font-family: 'raleway';
+	font-family: 'raleway'; 
 	display: block;
 	text-align: center;
 }
@@ -90,22 +93,31 @@ body {
 }
 
 .main-banner {
-		text-align: center;
-		padding: 50px 15px;
-		display: block;
+	text-align: center;
+	padding: 50px 15px;
+	display: block;
 }
 
 .checkboxes {
-		font-family: 'raleway';
-		font-size: 16px;
-		padding-right: 5px;
-		padding-left: 5px;
+	font-family: 'raleway';
+	font-size: 16px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
+.text {
+	font-size: 10px;
+	font-color: #616363;
+	font-style: bold;
+}
 
+/*//MORE TAB*/
+<style>
+div#expand {
+display:block;
 
-
-
+}
+</style>
 
 /* Imagery
 ================================ */
@@ -198,8 +210,7 @@ body {
     }
 
     .extra-content {
-        order: 3
-       ;
+        order: 3;
     }
 
 
