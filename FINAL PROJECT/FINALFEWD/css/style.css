@@ -7,7 +7,7 @@
 }
 body {
 	font: normal 1.1em/1.5;
-	font-family: 'raleway', sans-serif;
+	font-family: 'raleway', sans-serif, thin;
 	color: #222;
 	background-color: #edeff0;
 }
@@ -16,16 +16,40 @@ body {
 /* Layout Element Colors
 ================================ */
 .checkedboxes      { -webkit-columns: 3; }
-.btn-group a       { background-color: #3f8abf; }
-.main-header       { background-color: #ffffff; }
-.main-nav a        { background-color: #2FFADF; /*opacity; 20%;*/ }
+/*.main-nav a  */  { background-color: #2FFADF;}
 .main-logo a       { background-color: #B0FA2F; }
-.primary-content   { background-color: #DCEEE0; }
+.primary-content   { background-color: #e5f2ff; }
+.times   		   { background-color: #e5f2ff; }
 .main-footer       { background-color: #b7c0c7; }
 .main-banner       { background-color: #ffffff; }
-
+/*.btn               { background-color: #8c8c8c ; }*/
 /* Main Layout
 ================================ */
+
+
+.logo {
+	background: transparent; 
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+
+}
+
+.user {
+
+
+}
+
+.checkedboxes ul li input {
+	margin-right: 5px;
+}
+
+
+#visualisation {
+	background-color: red;
+}
+
 
 .main-header,
 .col {
@@ -40,18 +64,18 @@ body {
 	text-decoration: none;
 	text-align: center;
 	padding: 10px;
-	border-radius: ;
     position: relative;
     overflow: hidden;
+    background-color: #8c8c8c;
 }
 
 .btn-group a {
-	margin-top: 2px;
+	margin-top: 10px;
 }
 
 
 .main-nav a:hover::before {
-    left: 10%;
+    left: 50%;
 }
 
 .box {
@@ -60,10 +84,12 @@ body {
 
 }
 
-.levelSpike p {
+#levelSpike {
 	font-family: 'raleway';
 	font-size: 50px;
 	font-style: bold;
+	text-align: center;
+
 } 
 
 .main-footer {
@@ -73,13 +99,64 @@ body {
 	padding-bottom: 3px;
 	font-size: 12px;
 	color: #616363;
+}
 
+.user {
+	height: 60px;
+	margin-top: -70px;
+	padding-right: 140px;
+	float: left;
+}
+
+
+.fb-icon {
+	height: 60px;
+	margin-top: -70px;
+	margin-right: 110px;
+	float: right;
+}
+
+.twitter-icon {
+	height: 60px;
+	margin-top: -70px;
+	margin-right: 55px;
+	float: right;
+}
+
+
+.spotify-icon {
+	height: 60px;
+	margin-top: -70px;
+	float: right;
 }
 
 .primary-content h2 {
 	font-family: 'raleway'; 
 	display: block;
 	text-align: center;
+
+}
+
+.times  {
+	font-family: 'raleway'; 
+/*	display: block;*/
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 10px;
+
+}
+
+
+
+.primary-content p, 
+.extra-content p, 
+.secondary-content p {
+	font-family: 'raleway'; 
+	text-align: justify;
 }
 
 .secondary-content h3 {
@@ -94,7 +171,7 @@ body {
 
 .main-banner {
 	text-align: center;
-	padding: 50px 15px;
+	padding: 50px 0;
 	display: block;
 }
 
@@ -112,12 +189,21 @@ body {
 }
 
 /*//MORE TAB*/
-<style>
-div#expand {
-display:block;
+#more {
+	text-decoration: none;
+}
+
+#expand {
+	display: none;
 
 }
-</style>
+
+
+
+.copywrite {
+	font-size: 10.25px;
+	/*padding-top: -60px;*/
+}
 
 /* Imagery
 ================================ */
@@ -126,14 +212,23 @@ display:block;
 	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	padding: 5px;
+	/*padding: 5px;*/
 }
 
 .secondary-img {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 10px;
+	}
+
+
+.graphic {
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 10px;
 	}
+	
+}
 
 /* Media Queries
 ================================ */
@@ -156,6 +251,8 @@ display:block;
 	/* Header and Banner Layout
 	================================ */
 
+
+
 	.main-header {
 		position: fixed;
 		top: 0;
@@ -167,6 +264,7 @@ display:block;
         display: -webkit-flex;
         display: flex;
         height: 100%;
+
     }
 
     .main-nav li {
@@ -188,6 +286,8 @@ display:block;
         flex-grow: 1.5;
     }
 
+    
+	
 
 	/* Column Layout
 	================================ */
@@ -217,10 +317,10 @@ display:block;
 	/* Imagery
 	================================ */
 
-	.feat-img {
+	/*.feat-img {
 		width: 50%;
 		float: left;
 		margin-right: 25px;
-	}
+	}*/
 
 
